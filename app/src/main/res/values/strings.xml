@@ -1,0 +1,149 @@
+<resources>
+    <string name="app_name">TourismeApp</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="page_recherche">page recherche</string>
+    <string name="Recherchez_une_ville">Recherchez une ville</string>
+    <string name="google_maps_key">AIzaSyBr6ywY98m1OBpq2LWUODgnO6T17RLC9ts</string>
+    <string-array name="villes">
+        <item>rabat</item>
+        <item>kenitra</item>
+        <item>casablanca</item>
+        <item>fes</item>
+        <item>tanger</item>
+        <item>essaouira</item>
+        <item>el jadida</item>
+        <item>khnifra</item>
+        <item>khouribga</item>
+    </string-array>
+    <string name="ville">ville</string>
+    <string-array name="recherche_sur_Tourisme_App">
+        <item>a</item>
+        <item>ab</item>
+        <item>abc</item>
+        <item>ez</item>
+        <item>zf</item>
+        <item>dd</item>
+        <item>jk</item>
+        <item>zf</item>
+        <item>kg</item>
+    </string-array>
+
+    <!-- Rabat -->
+    <string-array name="monumentsRabatNames">
+        <item>Tour Hassan</item>
+        <item>Mausolee Mohammed 5</item>
+        <item>Kasbah des Oudayas</item>
+        <item>Chellah</item>
+    </string-array>
+    <integer-array name="monumentsRabatDrawable">
+        <item>@drawable/tour_hassan_rabat</item>
+
+        <item>@drawable/kasbah_des_oudayas_rabat</item>
+        <item>@drawable/chellah_rabat</item>
+    </integer-array>
+    <string-array name="monumentsRabatDescriptions">
+        <item>Tour Hassan:blaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</item>
+        <item>Mausolee Mohammed 5:blaaaaaaaaaaaaaaaaaaaaaaaaaaaa</item>
+        <item>Kasbah des Oudayas:blaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</item>
+        <item>Chellah:blaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</item>
+    </string-array>
+
+    <!-- fin Rabat -->
+
+
+    <!-- Ville populaires -->
+
+    <string-array name="nomVillesPopulaires">
+        <item>agadir</item>
+        <item>azilal</item>
+        <item>casablanca</item>
+        <item>chefchawn</item>
+        <item>dakhla</item>
+        <item>el_jadida</item>
+        <item>essaourira</item>
+        <item>fes</item>
+        <item>ifran</item>
+        <item>marrakech</item>
+        <item>meknes</item>
+        <item>ouarzazate</item>
+        <item>rabat</item>
+        <item>saidia</item>
+        <item>tanger</item>
+        <item>tetouan</item>
+    </string-array>
+
+    <integer-array name="drawableVillesPopulaires">
+        <item>@drawable/agadir</item>
+        <item>@drawable/azilal</item>
+        <item>@drawable/casablanca</item>
+        <item>@drawable/chefchawn</item>
+        <item>@drawable/dakhla</item>
+        <item>@drawable/el_jadida</item>
+        <item>@drawable/essaouira</item>
+        <item>@drawable/fes</item>
+        <item>@drawable/ifran</item>
+        <item>@drawable/marrakech</item>
+        <item>@drawable/meknes</item>
+        <item>@drawable/ouarzazate</item>
+        <item>@drawable/rabat</item>
+        <item>@drawable/saidia</item>
+        <item>@drawable/tanger</item>
+        <item>@drawable/tetouan</item>
+    </integer-array>
+
+    <!-- Fin Villes populaires -->
+
+    <!-- Patrimoine de l'UNESCO -->
+    <string-array name="nomVillesPatrimoineUnesco">
+        <item>El_JADIDA</item>
+        <item>ESSAOUIRA</item>
+        <item>FES</item>
+        <item>MARRAKECH</item>
+        <item>MEKNES</item>
+        <item>RABAT</item>
+        <item>TETOUAN</item>
+
+    </string-array>
+    <integer-array name="drawablePatrimoineUnesco">
+        <item>@drawable/el_jadida2</item>
+        <item>@drawable/essaouira2</item>
+        <item>@drawable/fes2</item>
+        <item>@drawable/marrakech2</item>
+        <item>@drawable/meknes2</item>
+        <item>@drawable/rabat2</item>
+        <item>@drawable/tetouan2</item>
+    </integer-array>
+
+    <!-- fin Patrimoine de l'UNESCO -->
+
+    <string name="rabat">RABAT</string>
+    <string name="fes">FES</string>
+    <string name="marrakech">MARRAKECH</string>
+    <string name="meknes">MEKNES</string>
+    <string name="title_activity_aide">AideActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_register_drawer">RegisterDrawerActivity</string>
+    <string name="title_activity_condition_utilisation">ConditionUtilisationActivity</string>
+    <string name="title_activity_apropos">AproposActivity</string>
+    <string name="title_activity_endroits">EndroitsActivity</string>
+    <string name="title_activity_profil">ProfilActivity</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_login_drawer">LoginDrawerActivity</string>
+    <string name="title_activity_postes">PostesActivity</string>
+    <string name="title_activity_m">mActivity</string>
+    <string name="title_activity_main3">Main3Activity</string>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/green</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="android:progressDrawable">@drawable/ratingbar_stars</item>
+        <item name="android:minHeight">22dp</item>
+        <item name="android:maxHeight">22dp</item>
+    </style>
+
+</resources>

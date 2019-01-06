@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".com.android.ensak.tourismeapp.rechercheActivity.TransportActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/activity_transport_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Type du transport" />
+
+        <TextView
+            android:id="@+id/prix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_transport_name"
+            android:layout_marginLeft="5dp"
+            android:padding="10dp"
+            android:text="Prix :"
+            android:textStyle="bold"
+            android:textColor="@color/deeppurple"
+            android:textFontWeight="4dp"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/DescriptionPrix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/prix"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/tel"
+            android:padding="10dp"
+            android:text="Description de prix du transport" />
+
+        <Button
+            android:id="@+id/buttonVoirStations"
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/DescriptionPrix"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="9dp"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/rounded_button"
+            android:gravity="center"
+            android:onClick="voirTrajet"
+            android:text="Voir les trajets"
+            android:textAllCaps="false"
+            android:textColor="#808080"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

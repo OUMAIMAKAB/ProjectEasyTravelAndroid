@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container_fragment"
+    tools:context=".com.android.ensak.tourismeapp.rechercheActivity.PageRechercheActivity"
+    android:focusableInTouchMode="true">
+
+
+
+    <EditText
+        android:id="@+id/barreRecherchePageRecherche"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/Recherchez_une_ville"
+        android:drawableLeft="@drawable/icon_recherche"
+        android:background="@drawable/rounded_button"
+        />
+
+<LinearLayout
+    android:layout_margin="50dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/content_fragment_page_recherche"
+    ></LinearLayout>
+
+
+    <include layout="@layout/sub_layout_menu_bas_autres"/>
+</RelativeLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".com.android.ensak.tourismeapp.mainActivity.MainActivity"
+    tools:openDrawer="start">
+
+    <include
+        layout="@layout/app_bar_main2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_marginTop="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/ti"
+            android:contentDescription="imagePagePrincipale"
+            android:id ="@+id/imageviewPrincipal"/>
+
+
+        <fragment
+            android:id="@+id/fragment1"
+            android:name="com.android.ensak.tourismeapp.com.android.ensak.tourismeapp.rechercheFragment.BareRechercheFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageviewPrincipal"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:layout_below="@+id/fragment1"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="172dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button1_page_principale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="button_ville_page_principal"
+                android:text="Rabat"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#808080"
+                android:background="@drawable/rounded_button"
+                android:layout_marginLeft="50dp"/>
+
+            <Button
+                android:id="@+id/button2_page_principale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="button_ville_page_principal"
+                android:text="Fes"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#808080"
+                android:background="@drawable/rounded_button"
+                android:layout_marginLeft="70dp"
+
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="316dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button3_page_principale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="button_ville_page_principal"
+                android:text="Marrakech"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#808080"
+                android:background="@drawable/rounded_button"
+                android:layout_marginLeft="50dp"/>
+
+            <Button
+                android:id="@+id/button4_page_principale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="button_ville_page_principal"
+                android:text="Meknes"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#808080"
+                android:background="@drawable/rounded_button"
+                android:layout_marginLeft="70dp"/>
+
+
+
+        </LinearLayout>
+
+        <include layout="@layout/sub_layout_menu_bas_principale" />
+
+
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_main2"
+        app:menu="@menu/activity_main2_drawer" />
+
+</android.support.v4.widget.DrawerLayout>

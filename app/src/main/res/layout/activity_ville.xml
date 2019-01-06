@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".com.android.ensak.tourismeapp.rechercheActivity.VilleActivity"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/container_image_view_ville">
+
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="150dp"
+            android:id="@+id/imageViewVille"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@color/deeppurple"
+            android:id="@+id/text_view_page_ville_images"
+            android:layout_centerInParent="true"
+            />
+
+
+    </RelativeLayout>
+
+
+    <fragment
+        android:id="@+id/fragment1"
+        android:name="com.android.ensak.tourismeapp.com.android.ensak.tourismeapp.rechercheFragment.BareRechercheFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/container_image_view_ville"
+         />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_activity_ville"
+        android:layout_below="@id/fragment1"
+        android:textColor="@color/bleuClair"
+        />
+
+    <include layout="@layout/sub_layout_menu_bas_autres"/>
+
+</RelativeLayout>

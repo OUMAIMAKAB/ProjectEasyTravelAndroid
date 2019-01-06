@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".com.android.ensak.tourismeapp.rechercheActivity.HopitalActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <TextView
+            android:id="@+id/activity_hopital_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Le nom de l'hopital" />
+
+
+        <TextView
+            android:id="@+id/tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@id/activity_hopital_name"
+            android:text="Tél :" />
+
+        <TextView
+            android:id="@+id/TelHopital"
+            android:layout_toRightOf="@+id/tel"
+            android:layout_below="@id/activity_hopital_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+             />
+
+        <Button
+            android:id="@+id/buttonAppelerHopital"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TelHopital"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/rounded_button"
+            android:gravity="center"
+            android:onClick="appeler"
+            android:text="Appeler"
+            android:textAllCaps="false"
+            android:textColor="#808080"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>

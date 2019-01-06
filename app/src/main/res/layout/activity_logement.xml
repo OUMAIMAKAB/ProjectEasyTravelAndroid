@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".com.android.ensak.tourismeapp.rechercheActivity.LogementActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageLogement"
+                android:layout_width="match_parent"
+                android:layout_height="186dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginBottom="325dp"
+                android:background="@drawable/rabat" />
+
+            <TextView
+                android:id="@+id/TypeLogement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/activity_Logement_name"
+                android:layout_marginStart="0dp"
+                android:text="Hotel"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/activity_Logement_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageLogement"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="27dp"
+                android:text="Farah"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/DescriptionLogement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_Logement_name"
+                android:padding="9dp"
+                android:text="Description du logement" />
+
+            <TextView
+                android:id="@+id/tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="75dp"
+                android:layout_marginBottom="22dp"
+                android:padding="7dp"
+                android:text="Tél :" />
+
+            <TextView
+                android:id="@+id/TelLogement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="22dp"
+                android:layout_toRightOf="@+id/tel"
+                android:padding="7dp"
+                android:text="0525477841" />
+
+            <Button
+                android:id="@+id/buttonAppelerLogement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/TelLogement"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/TelLogement"
+                android:background="@drawable/rounded_button"
+                android:text="Appeler"
+                android:textAllCaps="false"
+                android:textColor="#808080"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>
+

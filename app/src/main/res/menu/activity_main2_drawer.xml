@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/MenuCasNonInscription">
+        <item
+            android:id="@+id/nav_connecter"
+            android:icon="@drawable/ic_person"
+            android:title="Se connecter" />
+        <item
+            android:id="@+id/nav_inscription"
+            android:icon="@drawable/ic_person_add"
+            android:title="S'inscrire" />
+        <item
+            android:id="@+id/nav_test"
+            android:icon="@drawable/ic_person_add"
+            android:title="Test" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings_1"
+            android:title="Paramètres" />
+        <item
+            android:id="@+id/nav_propos"
+            android:icon="@drawable/ic_info"
+            android:title="À propos" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_lock_open"
+            android:title="Déconnexion" />
+    </group>
+
+    <item android:title="Autres">
+        <menu>
+            <item
+                android:id="@+id/nav_aide"
+                android:title="Aide et Commentaires" />
+            <item
+                android:id="@+id/nav_utilisation"
+                android:title="Conditions d'utilisation" />
+
+        </menu>
+
+    </item>
+
+</menu>
